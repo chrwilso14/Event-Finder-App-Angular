@@ -1,0 +1,29 @@
+<div class="listHeaderBackground">
+  <h1>Bucket List</h1>
+</div>
+
+  <div class="bucketListContainer">
+    
+    <div *ngIf="bucketList.length === 0" class="empty-bucketlist">
+      <strong>There is nothing in Your Bucket List Yet!</strong>
+    </div>
+    <div class="deleteInstructions" class ="event-detail-background">
+    <ul class="desktop-background">
+    <div *ngIf="bucketList.length > 0">
+      <div *ngFor="let item of bucketList; let i = index" class="bucketlist-items">
+        <a href="{{ item.url }}"><img width="340" height="150" src="{{ item?.images[0]?.url }}" class="desktop-photo"/></a>
+       
+          <button (click)="removeFromBucketList(i)" class="btn">
+            <i class="fa fa-close"></i>
+          </button>
+        <li class="event-info"><strong> Event Name: </strong> {{ item?.name }}</li>
+        <li class="event-info"><strong> Date: </strong> {{ item.dates?.start?.localDate }} </li>
+        <li class="event-info"><strong> City: </strong> {{ item?._embedded?.venues[0]?.city.name }} </li>
+        <li class="event-info"><strong> State: </strong> {{ item?._embedded?.venues[0]?.state.stateCode }} </li>
+        <li class="event-info"><strong> Postal Code: </strong> {{ item?._embedded?.venues[0]?.postalCode }} </li>
+      </div>
+      </div>
+      
+    </ul>
+  </div>
+  </div>

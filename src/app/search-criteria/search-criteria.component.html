@@ -1,0 +1,28 @@
+<div class="container">
+    <div class = "search-headline">
+    <h1>Search</h1>
+</div>
+<div class="search-items">
+  <div class= "search-boxes">
+    <div class="search1">
+        <input type="text" placeholder="Search by keyword" [(ngModel)] = "eventKeyword">
+        <button class="search-button-style" (click)="findEvent4()">Submit</button>
+    </div>
+    <div class="search2">
+        <input type="text" placeholder="Search by city" [(ngModel)] = "eventCity">
+        <button class="search-button-style" (click)="findEvent1()">Submit</button>
+    </div>
+    <div class="search3">
+        <input type="text" placeholder="Search by postal code" [(ngModel)] = "eventPostalCode">
+        <button class="search-button-style" (click)="findEvent2()">Submit</button>
+    </div>
+</div>
+
+    <div class="search-and-clear">
+       <button class="main-search" (click)="findEvent()">Search All</button>
+       <button class="clear-search" (click) = "reloadPage()">Clear Search</button> 
+    </div>
+</div>
+
+</div>
+

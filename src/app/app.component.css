@@ -1,0 +1,243 @@
+.header {
+  background-image: linear-gradient(
+      to bottom left,
+      hsla(300, 86%, 49%, 0.65),
+      58%,
+      blue
+    ),
+    url("/assets/images/neonbrandQftviCWoBQunsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* box-shadow:0px 2px 5px 1px rgba(55, 2, 92, 0.207); */
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  /* centerpoint is set to 90% from the top
+ /* lightness value is 20%, the saturation is 80%, and the transparency is 0.7*/
+}
+
+.container {
+  display: flex;
+  color:white;
+  font-size:15px;
+  display:flex;
+  justify-content:center;
+  margin:0px;
+  padding:0px;
+  flex-direction:row;
+}
+
+.find-events-link{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding-right:40px;
+  text-align:center;
+  flex-direction:center;
+  width:84px;
+}
+
+.search1,
+.search2,
+.search3 {
+  margin: 20px;
+}
+
+.navigation {
+  display:flex;
+  justify-content:center;
+  flex-direction:row;
+  /* display: inline-block; */
+  font-size: 20px;
+  padding: 5px 65px 18px 65px;
+  align-content: center;
+  box-shadow:3px -1px 3px -2px rgba(55, 2, 92, 0.207);
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+}
+
+a{
+  display: flex;
+  width:25px;
+  height:auto;
+  text-decoration: none;
+  justify-content: space-around;
+  align-items:center;
+  color:white;
+  flex-direction:row;
+}
+
+.links {
+  display:flex;
+  flex-direction: row;
+}
+
+p {
+  margin: 10px;
+}
+
+.box {
+  height: 100vh;
+  width: 100%;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  font-size: 15px;
+  padding: 0px;
+  margin: 0px;
+  width:auto;
+  color: white;
+  font-family:"Open Sans", sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 15px;
+  padding: 0px;
+  margin: 0px;
+  width:105px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+.btn {
+  background: none;
+  border-color: none;
+  background-color: none;
+  font-family:'source-sans', sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.logo {
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+a:hover {
+  background-color:black;
+  align-items:center;
+}
+
+
+@media only screen and (min-width:768px){
+  
+  body{
+    width:auto;
+    height: 100vh;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: row;
+    /* display: inline-block; */
+    font-size: 30px;
+    padding-bottom:30px;
+    align-items:center;
+    box-shadow:0px 2px 5px 1px rgba(55, 2, 92, 0.207);
+  }
+
+  .navigation li {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+    width: 250px;
+    color: white;
+    font-family:"Open Sans", sans-serif;
+  }
+
+  .logo {
+    height: auto;
+    width:300px;
+    margin-bottom:15px;
+    margin-left:10px;
+    padding: 0;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-size: 21px;
+    padding: 0px;
+    margin: 0px;
+    width:145px;
+  }
+
+  .find-events-link{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-right:40px;
+    text-align:center;
+    flex-direction:center;
+    width:70px;
+  }
+  
+.header{
+  display:flex;
+  justify-content:space-between;
+  flex-direction:row;
+  }
+
+  h1{
+    margin-left:25px;
+    padding-left:25px;
+  }
+
+  .links{
+    display:flex;
+    justify-content:flex-end;
+  }
+
+  ul.navigation{
+    display:flex;
+    justify-content:flex-end;
+  }
+
+  input{
+    width:200px;
+    display:flex;
+    flex-direction:row;
+  }
+
+  .search-boxes{
+    display:flex;
+    flex-direction:row;
+  }
+
+}
